@@ -1,0 +1,35 @@
+{
+  "name": "@firstkind/react",
+  "version": "1.0.2",
+  "description": "",
+  "private": false,
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "prepublish": "npm run publish",
+  "scripts": {
+    "build": "esbuild ./lib/main.ts --bundle --analyze --minify --format=esm --outdir=./dist",
+    "types": "rm -f dist/main.d.ts && npx tsc --emitDeclarationOnly --outDir dist",
+    "publish": "npm run build && npm run types",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "First Kind Software",
+  "license": "APACHE-2.0",
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "esbuild": "^0.14.39",
+    "eslint": "^8.15",
+    "ts-standard": "^11.0.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@firstkind/sdk": "^1.0.2",
+    "react": "^18.1.0"
+  }
+}
