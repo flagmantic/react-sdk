@@ -5,7 +5,7 @@ This SDK facilitates using the client APIs provided by [First Kind Software](htt
 # Install
 
 ```sh
-npm i @firstkind/sdk
+npm i @firstkind/react
 ```
 
 # Usage
