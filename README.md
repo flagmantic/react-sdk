@@ -1,6 +1,6 @@
-# First Kind React SDK
+# Flagmantic React SDK
 
-This SDK facilitates using the client APIs provided by [First Kind Software](https://firstkindsoftware.com)
+This SDK facilitates using the client APIs provided by [Flagmantic](https://flagmantic.com)
 
 # Install
 
